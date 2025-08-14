@@ -1,7 +1,20 @@
-# RAG-Based AI/ML Compliance Checker
+# Guardians of Science: A Python Tutorial on a RAG-Powered Compliance Plug-In and Ethical AI tools
+
+Presented at:
+<img width="310" height="163" alt="image" src="https://github.com/user-attachments/assets/bb2e4907-dc48-4967-a3c4-5aecfff4bb2f" />
+
+
+<img width="1024" height="1024" alt="Guardians of Science Emblem" src="https://github.com/user-attachments/assets/4b9caf84-14ae-49de-867b-8861c31eee83" />
+
+<p align="center">
+by Likhita Yerra, Anuradha Kar
+aivancity, La Grande École De L'intelligence Artificielle Et De La Data
+Paris, France
+</p>
+
 
 ## Overview
-The **Compliance Checker** is a Retrieval-Augmented Generation (RAG) powered tool designed to automatically evaluate AI/ML workflows against relevant regulatory and ethical guidelines such as **GDPR**, **HIPAA**, and the **EU AI Act**.
+The **Compliance Checker** is a Retrieval-Augmented Generation (RAG) powered tool designed to automatically evaluate AI/ML workflows against relevant regulatory and ethical guidelines such as **GDPR**, **HIPAA**, and the **EU AI Act**. In addition 
 
 It integrates seamlessly with existing machine learning pipelines to:
 - Perform **automated compliance checks** using structured regulation knowledge bases.
@@ -21,17 +34,6 @@ This project is designed for **developers, compliance officers, and AI researche
 - **Extensible** → Easily adapt to finance, manufacturing, autonomous systems, and other domains.
 
 ---
-
-## Architecture
-```mermaid
-flowchart LR
-    A[User Query] --> B[Vectorizer]
-    B --> C[Retriever - FAISS/Pinecone]
-    C --> D[Relevant Compliance Docs]
-    D --> E[LLM - OpenAI / HuggingFace]
-    E --> F[Compliance Report / Decision]
-```
-
 ---
 
 ## Installation
@@ -47,16 +49,7 @@ pip install -r requirements.txt
 ---
 
 ## Usage Example
-```python
-from compliance_checker import ComplianceChecker
 
-# Initialize compliance checker with GDPR knowledge base
-checker = ComplianceChecker(regulation="GDPR")
-
-# Query about AI model compliance
-response = checker.query("Does my healthcare prediction model comply with GDPR Article 22?")
-print(response)
-```
 
 ---
 
