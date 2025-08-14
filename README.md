@@ -1,15 +1,20 @@
 # Guardians of Science: A Python Tutorial on a RAG-Powered Compliance Plug-In and Ethical AI tools
 
 Presented at:
+
 <img width="310" height="163" alt="image" src="https://github.com/user-attachments/assets/bb2e4907-dc48-4967-a3c4-5aecfff4bb2f" />
 
 
-<img width="1024" height="1024" alt="Guardians of Science Emblem" src="https://github.com/user-attachments/assets/4b9caf84-14ae-49de-867b-8861c31eee83" />
+<img width="310" height="310" alt="Guardians of Science Emblem" src="https://github.com/user-attachments/assets/4b9caf84-14ae-49de-867b-8861c31eee83" />
 
 <p align="center">
-by Likhita Yerra, Anuradha Kar
-aivancity, La Grande École De L'intelligence Artificielle Et De La Data
-Paris, France
+  
+**by Likhita Yerra, Anuradha Kar**
+
+**aivancity, La Grande École De L'intelligence Artificielle Et De La Data**
+
+**Paris, France**
+
 </p>
 
 
