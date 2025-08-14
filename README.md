@@ -1,4 +1,4 @@
-#RAG-Based AI/ML Compliance Checker
+# RAG-Based AI/ML Compliance Checker
 
 ## Overview
 The **Compliance Checker** is a Retrieval-Augmented Generation (RAG) powered tool designed to automatically evaluate AI/ML workflows against relevant regulatory and ethical guidelines such as **GDPR**, **HIPAA**, and the **EU AI Act**.
