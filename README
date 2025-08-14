@@ -1,0 +1,84 @@
+# RAG-Based AI/ML Compliance Checker
+
+## Overview
+The **Compliance Checker** is a Retrieval-Augmented Generation (RAG) powered tool designed to automatically evaluate AI/ML workflows against relevant regulatory and ethical guidelines such as **GDPR**, **HIPAA**, and the **EU AI Act**.
+
+It integrates seamlessly with existing machine learning pipelines to:
+- Perform **automated compliance checks** using structured regulation knowledge bases.
+- Enhance **traceability** with audit trails and decision logs.
+- Support **bias auditing**, **explainability**, and **reproducibility** in model development.
+
+This project is designed for **developers, compliance officers, and AI researchers** aiming to embed **trust, accountability, and transparency** into AI systems from the start.
+
+---
+
+## Key Features
+- **RAG Architecture** → Combines document retrieval from compliance knowledge bases with generative LLM reasoning.
+- **Multi-Regulation Coverage** → Preloaded with GDPR, HIPAA, and AI Act Articles & Recitals.
+- **Healthcare-Focused Use Case** → Includes a heart disease prediction dataset for ML model testing.
+- **Explainability Integration** → Supports SHAP-based explanations for decisions.
+- **Bias Auditing** → Flags fairness concerns in model outputs.
+- **Extensible** → Easily adapt to finance, manufacturing, autonomous systems, and other domains.
+
+---
+
+## Architecture
+```mermaid
+flowchart LR
+    A[User Query] --> B[Vectorizer]
+    B --> C[Retriever - FAISS/Pinecone]
+    C --> D[Relevant Compliance Docs]
+    D --> E[LLM - OpenAI / HuggingFace]
+    E --> F[Compliance Report / Decision]
+```
+
+---
+
+## Installation
+```bash
+# Clone repository
+git clone https://github.com/yourusername/compliance-checker.git
+cd compliance-checker
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+---
+
+## Usage Example
+```python
+from compliance_checker import ComplianceChecker
+
+# Initialize compliance checker with GDPR knowledge base
+checker = ComplianceChecker(regulation="GDPR")
+
+# Query about AI model compliance
+response = checker.query("Does my healthcare prediction model comply with GDPR Article 22?")
+print(response)
+```
+
+---
+
+## Datasets
+- **Healthcare Heart Disease Dataset** (synthetic) for testing ML compliance in medical scenarios.
+- Custom datasets can be indexed for domain-specific compliance queries.
+
+---
+
+## Regulations Covered
+- **GDPR** – Data privacy & protection requirements for EU citizens.
+- **HIPAA** – Healthcare data privacy regulations for US-based systems.
+- **EU AI Act** – Risk-based AI system obligations & prohibited practices.
+
+---
+
+## Planned Extensions
+- Add ISO/IEC AI Management Standards (ISO/IEC 42001).
+- Expand to multilingual compliance knowledge bases.
+- Add cross-regulation conflict resolution.
+
+---
+
+## License
+MIT License – See [LICENSE](LICENSE) file for details.
